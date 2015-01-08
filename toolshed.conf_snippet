@@ -1,0 +1,11 @@
+[program:toolshed]
+command         = /root/venv/bin/python ./scripts/paster.py serve config/tool_shed.ini --pid-file=tool_shed_webapp.pid --log-file=/root/tool_shed_webapp.log
+directory       = /galaxy-central
+process_name    = toolshed
+umask           = 022
+autostart       = true
+autorestart     = true
+startsecs       = 15
+user            = root
+environment     = PYTHON_EGG_CACHE=/root/.python-eggs
+
