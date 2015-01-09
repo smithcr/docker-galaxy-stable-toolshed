@@ -4,3 +4,8 @@ galaxy stable with an empty dev toolshed enabled
 typical use:
 
 `docker run -d -p 8080:80 -p 9009:9009 -v /host/dir:/export smithcr/galaxy-stable-toolshed`
+
+log into the toolshed as an administrator with:
+
+`email: toolshed@galaxy.org`
+`pass:  toolshed`
